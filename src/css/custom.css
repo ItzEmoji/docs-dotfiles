@@ -1,0 +1,30 @@
+/* Same accent as the docs.itzemoji.com landing page. */
+:root {
+  --ifm-color-primary: #1b4b8f;
+  --ifm-color-primary-dark: #184481;
+  --ifm-color-primary-darker: #17407a;
+  --ifm-color-primary-darkest: #133564;
+  --ifm-color-primary-light: #1e529d;
+  --ifm-color-primary-lighter: #1f56a4;
+  --ifm-color-primary-lightest: #2361ba;
+  --ifm-font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --ifm-code-font-size: 90%;
+  --ifm-navbar-shadow: none;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #7fa8e6;
+  --ifm-color-primary-dark: #6597e1;
+  --ifm-color-primary-darker: #588fdf;
+  --ifm-color-primary-darkest: #3075d7;
+  --ifm-color-primary-light: #99b9eb;
+  --ifm-color-primary-lighter: #a6c1ed;
+  --ifm-color-primary-lightest: #cdddf5;
+  --ifm-background-color: #14171c;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
+}
+
+.navbar {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}

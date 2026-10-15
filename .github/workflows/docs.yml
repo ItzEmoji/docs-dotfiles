@@ -1,0 +1,17 @@
+name: Docs
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    uses: ItzEmoji/docs-deployer/.github/workflows/publish.yml@main
+    with:
+      path: platform
+      build: bun install --frozen-lockfile && bun run build
+      output: build
+      app-client-id: ${{ vars.DOCS_APP_CLIENT_ID }}
+    secrets:
+      app-private-key: ${{ secrets.DOCS_APP_PRIVATE_KEY }}
